@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Marcel Esser
+  description: Install common server packages, setup a firewall, and allow 22/tcp, on Debian/Ubuntu.
+  company: Croscon
+  license: BSD
+  min_ansible_version: 2.0
+  github_branch: master
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+    - name: Debian
+      versions:
+        - stretch
+  galaxy_tags:
+    - server
+    - firewall
+    - ssh
+
+dependencies: []
+

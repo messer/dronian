@@ -1,0 +1,21 @@
+---
+- name: Install a series of common server packages
+  apt:
+    name: "{{ item }}"
+    state: present
+    force: yes
+  with_items:
+    - net-tools
+    - iputils-ping
+    - inetutils-traceroute
+    - dnsutils
+    - telnet
+    - curl
+    - wget
+    - htop
+    - vim
+    - fail2ban
+    - gpg
+    - openssl
+    - ufw
+
