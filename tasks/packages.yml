@@ -15,7 +15,6 @@
     - htop
     - vim
     - fail2ban
-    - gpg
     - openssl
     - ufw
 
