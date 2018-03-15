@@ -2,9 +2,10 @@
 - name: "Ensure Ansible-required Python 2.x installed."
   raw: test -e /usr/bin/python || (apt-get update -y && apt-get install -y python-minimal)
   register: test
-  changed_when: test.stdout
+  changed_when: test.stdout != ""
 
 - include_tasks: upgrade.yml
 - include_tasks: packages.yml
 - include_tasks: ufw.yml
+- include_tasks: timezone.yml
 

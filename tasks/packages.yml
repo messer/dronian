@@ -11,13 +11,16 @@
     - dnsutils
     - telnet
     - curl
+    - rsync
+    - sudo
     - wget
     - htop
     - vim
     - fail2ban
     - openssl
-    - ufw
     - apt-transport-https
     - ca-certificates
     - software-properties-common
+    - ntp
+    - ufw
 

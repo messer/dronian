@@ -1,2 +1,5 @@
 ---
 # defaults file for server
+dronian_timezone: "Etc/UTC"
+dronian_firewall: yes
+

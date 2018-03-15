@@ -4,8 +4,10 @@
     rule: allow
     port: 22
     proto: tcp
+  when: dronian_firewall == "yes"
 
 - name: Enable UFW
   ufw:
     state: enabled
+  when: dronian_firewall == "yes"
 
